@@ -81,10 +81,10 @@
 </head>
 <body>
     <header>
-        <h1>Hoşgeldin sevgilim</h1>
+        <h1>Hoşgeldin Sevgilim</h1>
     </header>
     <nav>
-        <a href="#" data-target="odev1">Ödev 1</a>
+        <a href="#" data-target="odev1">Test 1</a>
         <a href="#" data-target="odev2">Ödev 2</a>
         <a href="#" data-target="odev3">Ödev 3</a>
         <a href="#" data-target="odev4">Ödev 4</a>
@@ -157,7 +157,11 @@
                     activeOdev.classList.add("fade-out");
                     setTimeout(() => {
                         activeOdev.classList.remove("active", "fade-out");
-                        newOdev.classList.add("active");
+                        activeOdev.style.display = "none";
+                        newOdev.style.display = "block";
+                        setTimeout(() => {
+                            newOdev.classList.add("active");
+                        }, 10);
                     }, 500);
                 }
             });
