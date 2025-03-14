@@ -116,7 +116,7 @@
         <div class="odev-container">
             <div id="odev1" class="odev active">
                 <h3>Ödev 1</h3>
-                <p>Ödev 1 açıklaması burada olacak.</p>
+                <p>Test1</p>
             </div>
             <div id="odev2" class="odev">
                 <h3>Ödev 2</h3>
@@ -157,7 +157,29 @@
         </div>
     </div>
     <footer>
-        2025 Codebase1. All rights reserved.
+         2025 Codebase1. All rights reserved.
     </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll("nav a");
+        const odevler = document.querySelectorAll(".odev");
+        let activeOdev = document.querySelector(".odev.active");
+
+        links.forEach(link => {
+            link.addEventListener("click", function (event) {
+                event.preventDefault();
+                const targetId = this.getAttribute("data-target");
+                if (activeOdev) {
+                    activeOdev.classList.add("fade-out");
+                    setTimeout(() => {
+                        activeOdev.classList.remove("active", "fade-out");
+                        activeOdev = document.getElementById(targetId);
+                        activeOdev.classList.add("active");
+                    }, 500);
+                }
+            });
+        });
+    });
+</script>
 </body>
 </html>
