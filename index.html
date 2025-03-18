@@ -95,14 +95,14 @@
 </head>
 <body>
     <header>
-        <h1>Hoşgeldin Sevgilim</h1>
+        <h1>Codebase</h1>
     </header>
     <nav>
-        <a href="#" data-target="odev1">Test 1</a>
-        <a href="#" data-target="odev2">Ödev 2</a>
-        <a href="#" data-target="odev3">Ödev 3</a>
-        <a href="#" data-target="odev4">Ödev 4</a>
-        <a href="#" data-target="odev5">Ödev 5</a>
+        <a href="#" data-target="odev1">Ödev 1Q1</a>
+        <a href="#" data-target="odev2">Ödev 1Q2</a>
+        <a href="#" data-target="odev3">Ödev 1Q3</a>
+        <a href="#" data-target="odev4">Ödev 1Q4a</a>
+        <a href="#" data-target="odev5">Ödev 1Q4b</a>
         <a href="#" data-target="odev6">Ödev 6</a>
         <a href="#" data-target="odev7">Ödev 7</a>
         <a href="#" data-target="odev8">Ödev 8</a>
@@ -115,24 +115,119 @@
         
         <div class="odev-container">
             <div id="odev1" class="odev active">
-                <h3>Ödev 1</h3>
-                <p>Test1</p>
+                <h3>Ödev 1Q1</h3>
+                <img src="qr-code.png" style="width:200px;height:200px;">
             </div>
             <div id="odev2" class="odev">
                 <h3>Ödev 2</h3>
-                <p>Ödev 2 açıklaması burada olacak.</p>
+                <p>int main( void ) 
+
+{ 
+
+   int integer1;
+
+   int integer2;
+
+   int sum;      
+
+ 
+
+   printf( "Enter first integer\n" ); 
+
+   scanf( "%d", &integer1 );       
+
+ 
+
+   printf( "Enter second integer\n" ); /* prompt */ 
+
+   scanf( "%d", &integer2 );           /* read an integer */ 
+
+    
+
+   sum = integer1 + integer2; /* assign total to sum */ 
+
+ 
+
+   printf( "Sum is %d\n", sum ); /* print sum */ 
+
+  
+}</p>
             </div>
             <div id="odev3" class="odev">
-                <h3>Ödev 3</h3>
-                <p>Ödev 3 açıklaması burada olacak.</p>
+                <h3>Ödev 1Q3</h3>
+                
+                <p>
+                    #include <stdio.h>
+
+int main(void){
+	int pop;
+	
+	int size;
+	
+	int price;
+	
+	printf("Enter popularity\n");
+	scanf("%d", &pop);
+	
+	printf("Enter popularity\n");
+	scanf("%d", &size);
+	
+	price = (pop*pop*pop + size*size) *10000;
+	printf("price is %d\n", price);
+	
+	
+}
+                </p>
             </div>
             <div id="odev4" class="odev">
-                <h3>Ödev 4</h3>
-                <p>Ödev 4 açıklaması burada olacak.</p>
+                <h3>Ödev 1Q4a</h3>
+                
+                <p>#include <stdio.h>
+
+
+int computeHomeValue(int pop, int size){
+	int	price;
+	price = (pop*pop*pop + size*size)*10000;
+	return price;
+	
+}
+int main(void){
+	int pop;
+	int size;
+	printf("enter pop\n");
+	scanf("%d", &pop);
+	printf("enter size\n");
+	scanf("%d", &size);
+	printf("price is %d", computeHomeValue(pop, size));
+	
+	
+}</p>
             </div>
             <div id="odev5" class="odev">
-                <h3>Ödev 5</h3>
-                <p>Ödev 5 açıklaması burada olacak.</p>
+                <h3>Ödev 1Q4b</h3>
+                <p>#include<stdio.h>
+void computeHomeValue(void){
+	int pop;
+	
+	int size;
+	
+	int price;
+	
+	printf("Enter popularity\n");
+	scanf("%d", &pop);
+	
+	printf("Enter popularity\n");
+	scanf("%d", &size);
+	
+	price = (pop*pop*pop + size*size) *10000;
+	printf("price is %d\n", price);
+	
+	
+}
+int main(void){
+	computeHomeValue();
+	
+}</p>
             </div>
             <div id="odev6" class="odev">
                 <h3>Ödev 6</h3>
